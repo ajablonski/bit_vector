@@ -10,7 +10,7 @@ all: $(SOURCES) test
 %.o: %.c
 	$(CC) $(CFLAGS) $< -o $@
 
-test:  
+test: $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o check_bit_vector $(POSTFLAGS)
 	./check_bit_vector
 
