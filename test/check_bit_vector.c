@@ -14,6 +14,12 @@ START_TEST (test_sample_2)
 }
 END_TEST
 
+START_TEST (test_create_bit_vector)
+{
+    void *bv = create_bit_vector(20);
+}
+END_TEST
+
 Suite *bit_vector_suite(void)
 {
     Suite *s = suite_create("Bit Vector");
