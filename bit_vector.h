@@ -4,4 +4,3 @@
 
 #endif /* BIT_VECTOR_H */
 
-
